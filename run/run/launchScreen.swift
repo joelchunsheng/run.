@@ -19,9 +19,10 @@ class launchScreenViewController: UIViewController {
         
         setupView()
         
-        let animationView = LOTAnimationView(name: "Welcome")
-        animationView.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.width)
+        let animationView = LOTAnimationView(name: "WelcomeRun")
+        animationView.frame = CGRect(x: 0, y: self.view.frame.height/8, width: self.view.frame.width, height: self.view.frame.width)
         self.view.addSubview(animationView)
+        animationView.loopAnimation = true
         animationView.play()
     }
     
@@ -44,6 +45,16 @@ class launchScreenViewController: UIViewController {
     @objc func videoDidPlayToEnd(_ notification: Notification){
         let player: AVPlayerItem = notification.object as! AVPlayerItem
         player.seek(to: CMTime.zero)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
     }
     
     
