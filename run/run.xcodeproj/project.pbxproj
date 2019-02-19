@@ -12,6 +12,8 @@
 		574237F422189EC600169C01 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574237F322189EC600169C01 /* Gif.swift */; };
 		574237FA2218A35700169C01 /* welcomeCartoon.gif in Resources */ = {isa = PBXBuildFile; fileRef = 574237F92218A35700169C01 /* welcomeCartoon.gif */; };
 		57631F0722196B0400AB54BF /* WelcomeRun.json in Resources */ = {isa = PBXBuildFile; fileRef = 57631F0622196B0400AB54BF /* WelcomeRun.json */; };
+		5777D10A221B06170015FF9C /* runViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5777D109221B06170015FF9C /* runViewController.swift */; };
+		577BB399221AD4D400E67D47 /* textField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577BB398221AD4D400E67D47 /* textField.swift */; };
 		57B1BE9D221861FB00A457AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B1BE9C221861FA00A457AA /* Assets.xcassets */; };
 		57FBDC302214773A00749E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FBDC2F2214773A00749E2E /* AppDelegate.swift */; };
 		57FBDC352214773A00749E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57FBDC332214773A00749E2E /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 		574237F322189EC600169C01 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
 		574237F92218A35700169C01 /* welcomeCartoon.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = welcomeCartoon.gif; sourceTree = "<group>"; };
 		57631F0622196B0400AB54BF /* WelcomeRun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WelcomeRun.json; sourceTree = "<group>"; };
+		5777D109221B06170015FF9C /* runViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = runViewController.swift; sourceTree = "<group>"; };
+		577BB398221AD4D400E67D47 /* textField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = textField.swift; sourceTree = "<group>"; };
 		57B1BE9C221861FA00A457AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57FBDC2C2214773A00749E2E /* run.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = run.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57FBDC2F2214773A00749E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,9 +61,25 @@
 			children = (
 				57FBDC4722147A0500749E2E /* launchScreen.swift */,
 				574237F12218972800169C01 /* welcomeProfile.swift */,
-				574237F322189EC600169C01 /* Gif.swift */,
 			);
 			name = onBoarding;
+			sourceTree = "<group>";
+		};
+		5777D108221AFF980015FF9C /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5777D109221B06170015FF9C /* runViewController.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		577BB397221AD4A600E67D47 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				574237F322189EC600169C01 /* Gif.swift */,
+				577BB398221AD4D400E67D47 /* textField.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		579EB60A22167F6400DEE57B /* media */ = {
@@ -91,6 +111,7 @@
 		57FBDC2E2214773A00749E2E /* run */ = {
 			isa = PBXGroup;
 			children = (
+				5777D108221AFF980015FF9C /* main */,
 				57631F0822196B6800AB54BF /* onBoarding */,
 				579EB60A22167F6400DEE57B /* media */,
 				57FBDC46221479C700749E2E /* aeFiles */,
@@ -100,6 +121,7 @@
 				57FBDC3B2214773A00749E2E /* LaunchScreen.storyboard */,
 				57FBDC3E2214773A00749E2E /* Info.plist */,
 				57FBDC362214773A00749E2E /* run.xcdatamodeld */,
+				577BB397221AD4A600E67D47 /* extensions */,
 			);
 			path = run;
 			sourceTree = "<group>";
@@ -255,7 +277,9 @@
 			files = (
 				574237F22218972800169C01 /* welcomeProfile.swift in Sources */,
 				57FBDC4822147A0500749E2E /* launchScreen.swift in Sources */,
+				5777D10A221B06170015FF9C /* runViewController.swift in Sources */,
 				57FBDC382214773A00749E2E /* run.xcdatamodeld in Sources */,
+				577BB399221AD4D400E67D47 /* textField.swift in Sources */,
 				57FBDC302214773A00749E2E /* AppDelegate.swift in Sources */,
 				574237F422189EC600169C01 /* Gif.swift in Sources */,
 			);
